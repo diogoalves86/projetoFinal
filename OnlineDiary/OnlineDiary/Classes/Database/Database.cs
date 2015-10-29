@@ -6,7 +6,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 
-namespace OnlineDiary.Classes.Database
+namespace OnlineDiary.Classes
 {
     public class Database
     {
@@ -17,6 +17,11 @@ namespace OnlineDiary.Classes.Database
         public Database()
         {
             conexao = new SqlConnection(strConexao);
+        }
+
+        public SqlConnection ReturnConnection()
+        {
+            return conexao;
         }
 
         public SqlDataReader QueryReader(string strComando)
@@ -31,5 +36,6 @@ namespace OnlineDiary.Classes.Database
             comando = new SqlCommand();
             return comando.ExecuteNonQuery();
         }
+
     }
 }
