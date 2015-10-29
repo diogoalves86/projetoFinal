@@ -1,0 +1,2 @@
+NÃO ESQUECER DE TROCAR O PATH PARA O SEU COMPUTADOR
+Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\alunoct\Desktop\projetoFinal\OnlineDiary\OnlineDiary\Database\main_database.mdf;Integrated Security=True;Connect Timeout=30
