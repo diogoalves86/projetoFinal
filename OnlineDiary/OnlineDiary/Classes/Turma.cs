@@ -15,10 +15,10 @@ namespace OnlineDiary.Classes
         private Database banco = new Database();
 
 
-        public void PegarTurma()
+        public void PegarAlunosTurma()
         {
             Hashtable alunos = new Hashtable();
-            SqlDataReader reader = banco.QueryReader("SELECT * FROM Turma");
+            SqlDataReader reader = banco.QueryReader("SELECT * FROM Usuario_Turma");
             while(reader.Read())
             {
                 alunos["aa"] = "a";
