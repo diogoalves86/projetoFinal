@@ -2,19 +2,17 @@
 <%@ Register Src="~/Account/OpenAuthProviders.ascx" TagPrefix="uc" TagName="OpenAuthProviders" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-    <hgroup class="title">
-        <h1><%: Title %>.</h1>
-    </hgroup>
+
     <section id="loginForm">
-        <h2>Use a local account to log in.</h2>
+        <h3>Login</h3>
         <asp:Login runat="server" ViewStateMode="Disabled" RenderOuterTable="false">
             <LayoutTemplate>
                 <p class="validation-summary-errors">
                     <asp:Literal runat="server" ID="FailureText" />
                 </p>
                 <fieldset>
-                    <legend>Log in Form</legend>
-                    <ol>
+                    
+                    <ul>
                         <li>
                             <asp:Label runat="server" AssociatedControlID="UserName">User name</asp:Label>
                             <asp:TextBox runat="server" ID="UserName" />
@@ -29,19 +27,13 @@
                             <asp:CheckBox runat="server" ID="RememberMe" />
                             <asp:Label runat="server" AssociatedControlID="RememberMe" CssClass="checkbox">Remember me?</asp:Label>
                         </li>
-                    </ol>
-                    <asp:Button runat="server" CommandName="Login" Text="Log in" />
+                    </ul>
+                    <div id="login-button">
+                        <asp:Button runat="server" CommandName="Login" Text="Log in" />
+                    </div>
                 </fieldset>
             </LayoutTemplate>
         </asp:Login>
-        <p>
-            <asp:HyperLink runat="server" ID="RegisterHyperLink" ViewStateMode="Disabled">Register</asp:HyperLink>
-            if you don't have an account.
-        </p>
     </section>
 
-    <section id="socialLoginForm">
-        <h2>Use another service to log in.</h2>
-        <uc:OpenAuthProviders runat="server" ID="OpenAuthLogin" />
-    </section>
 </asp:Content>

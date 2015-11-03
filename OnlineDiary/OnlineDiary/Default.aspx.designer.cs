@@ -7,11 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace OnlineDiary
-{
-
-
-    public partial class _Default
-    {
+namespace OnlineDiary {
+    
+    
+    public partial class _Default {
     }
 }
