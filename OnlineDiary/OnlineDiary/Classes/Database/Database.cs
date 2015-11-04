@@ -10,7 +10,7 @@ namespace OnlineDiary.Classes
 {
     public class Database
     {
-        private string strConexao = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+        private string strConexao = ConfigurationManager.ConnectionStrings["MainConnection"].ConnectionString;
         private SqlConnection conexao;
         private SqlCommand comando;
 
