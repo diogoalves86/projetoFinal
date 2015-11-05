@@ -13,7 +13,7 @@ namespace OnlineDiary.Account
         {
             if (this.User.Identity.IsAuthenticated)
             {
-                Response.Redirect("Painel/Home");
+                Response.Redirect("/Painel/Home");
             }
             /*RegisterHyperLink.NavigateUrl = "Register";
             OpenAuthLogin.ReturnUrl = Request.QueryString["ReturnUrl"];
