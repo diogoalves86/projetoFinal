@@ -2,6 +2,11 @@
     font-family: "Palatino Linotype";
     background-color: rgb(195,195,195);
 }
+a{
+    text-decoration: none;
+    font-size: 13px;
+}
+
 header{
     height: 120px;
     background-color: #000;
@@ -25,7 +30,7 @@ header ul li{
 }
 #loginForm ul{
     list-style: none;
-    width: 50%;
+    width: 260px;
     margin: 45px auto;
     margin-bottom: 0;
 }
@@ -47,6 +52,12 @@ header ul li{
     border-radius: 10px;
     margin: auto;
     padding: 10px;
+    margin-left: 382px;
+}
+
+#loginForm fieldset .textbox_login{
+    margin-left: 20px;
+    width: 160px;
 }
 
 .header_action{
@@ -56,8 +67,6 @@ header ul li{
 
 .header_action a{
     color: #FFF;
-    text-decoration: none;
-    font-size: 13px;
 }
 #login{
     float:right;

@@ -14,13 +14,16 @@
                     <ul>
                         <li>
                             <asp:Label runat="server" AssociatedControlID="UserName">E-mail</asp:Label>
-                            <asp:TextBox runat="server" ID="UserName" />
+                            <asp:TextBox runat="server" CssClass="textbox_login" ID="UserName" />
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="UserName" CssClass="field-validation-error" ErrorMessage="The user name field is required." />
                         </li>
                         <li>
                             <asp:Label runat="server" AssociatedControlID="Password">Senha</asp:Label>
-                            <asp:TextBox runat="server" ID="Password" TextMode="Password" />
+                            <asp:TextBox runat="server" ID="Password" CssClass="textbox_login" TextMode="Password" />
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="Password" CssClass="field-validation-error" ErrorMessage="The password field is required." />
+                        </li>
+                        <li>
+                            <a href="#">Esqueci minha senha</a>
                         </li>
                         <li>
                             <asp:CheckBox runat="server" ID="RememberMe" />
