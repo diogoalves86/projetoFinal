@@ -11,6 +11,10 @@ namespace OnlineDiary.Account
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (this.User.Identity.IsAuthenticated)
+            {
+                Response.Redirect("Painel/Home");
+            }
             /*RegisterHyperLink.NavigateUrl = "Register";
             OpenAuthLogin.ReturnUrl = Request.QueryString["ReturnUrl"];
 
