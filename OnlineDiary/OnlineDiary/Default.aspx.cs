@@ -12,6 +12,7 @@ namespace OnlineDiary
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Response.Redirect("Account/Login.aspx");
             if (!this.User.Identity.IsAuthenticated)
             {
                 
