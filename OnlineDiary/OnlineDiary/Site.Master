@@ -39,20 +39,25 @@
     <header>
         <div class="content-wrapper">
             <div id="logo_cp2">
-                <p class="site-title">
-                    <a runat="server" href="~/">
-                        <asp:Image ImageUrl="~/Images/Pedro-II-logo-W.png" runat="server" />
-                    </a>
-                </p>
+                <div class="site-title">
+                    <h2>Diário Online</h2>
+                    <p>
+                        <a runat="server" href="~/">
+                            <asp:Image ImageUrl="~/Images/Pedro-II-logo-W.png" runat="server" />
+                        </a>
+                    </p>
+                </div>
             </div>
             <div id="login">
                 <section>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
-                            <ul>
-                                <li class="link_header"><a id="registerLink"  runat="server" href="~/Account/Register">Cadastro</a></li>
-                                <li class="link_header"><a id="loginLink" runat="server" href="~/Account/Login">Login | </a></li>
-                            </ul>
+                            <div class="header_action">
+                                <ul>
+                                    <li><a id="registerLink"  runat="server" href="~/Account/Register">Cadastro</a></li>
+                                    <li><a id="loginLink" runat="server" href="~/Account/Login">Login | </a></li>
+                                </ul>
+                            </div>
                         </AnonymousTemplate>
                         <LoggedInTemplate>
                             <p>
