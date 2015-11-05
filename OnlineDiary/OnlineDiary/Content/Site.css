@@ -48,14 +48,6 @@ header ul li{
     margin-right: 10px;
 }
 
-.site-title{
-   
-}
-.site-title h2{
-    color: #fff;
-    font-size: 12px;
-    margin-left: 20px;
-}
 
 .header_action a{
     color: #FFF;
@@ -68,4 +60,11 @@ header ul li{
 
 #logo_cp2{
     float:left;
+    width: 80%;
+}
+#logo_cp2 h2{
+    color: #fff;
+    font-size: 33px;
+    margin-left: 55%;
+    font-family: Palatino Linotype;
 }

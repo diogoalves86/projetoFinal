@@ -38,8 +38,8 @@
     </asp:ScriptManager>
     <header>
         <div class="content-wrapper">
-            <div id="logo_cp2">
-                <div class="site-title">
+            <div id="logo_cp2" class="site-title">
+                <div>
                     <h2>Diário Online</h2>
                     <p>
                         <a runat="server" href="~/">
