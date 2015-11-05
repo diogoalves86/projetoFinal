@@ -4,7 +4,6 @@
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
 
     <section id="loginForm">
-        <h3>Login</h3>
         <asp:Login runat="server" ViewStateMode="Disabled" RenderOuterTable="false">
             <LayoutTemplate>
                 <p class="validation-summary-errors">
@@ -14,12 +13,12 @@
                     
                     <ul>
                         <li>
-                            <asp:Label runat="server" AssociatedControlID="UserName">User name</asp:Label>
+                            <asp:Label runat="server" AssociatedControlID="UserName">E-mail</asp:Label>
                             <asp:TextBox runat="server" ID="UserName" />
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="UserName" CssClass="field-validation-error" ErrorMessage="The user name field is required." />
                         </li>
                         <li>
-                            <asp:Label runat="server" AssociatedControlID="Password">Password</asp:Label>
+                            <asp:Label runat="server" AssociatedControlID="Password">Senha</asp:Label>
                             <asp:TextBox runat="server" ID="Password" TextMode="Password" />
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="Password" CssClass="field-validation-error" ErrorMessage="The password field is required." />
                         </li>

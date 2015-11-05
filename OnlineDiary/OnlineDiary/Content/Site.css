@@ -1,5 +1,6 @@
 ﻿body {
     font-family: "Palatino Linotype";
+    background-color: rgb(195,195,195);
 }
 header{
     height: 120px;
@@ -26,10 +27,15 @@ header ul li{
     list-style: none;
     width: 50%;
     margin: 45px auto;
+    margin-bottom: 0;
 }
 
 #loginForm ul li{
     display: block;
+}
+
+#login-buton{
+    margin-left: 58%;
 }
 
 #loginForm fieldset{
@@ -38,10 +44,9 @@ header ul li{
     height: 245px;
 }
 #loginForm fieldset input[type="submit"]{
-    width: 100px;
     border-radius: 10px;
-    padding: 10px;
     margin: auto;
+    padding: 10px;
 }
 
 .header_action{
@@ -60,11 +65,11 @@ header ul li{
 
 #logo_cp2{
     float:left;
-    width: 80%;
+    width: 58%;
 }
 #logo_cp2 h2{
-    color: #fff;
+    color: #FFF;
     font-size: 33px;
-    margin-left: 55%;
     font-family: Palatino Linotype;
+    float: right;
 }
