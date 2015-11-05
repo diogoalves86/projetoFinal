@@ -43,8 +43,15 @@ header ul li{
     margin: auto;
 }
 
-.link_header{
+.link_header a{
     color: #FFF;
     text-decoration: none;
     font-size: 13px;
+}
+#login{
+    float:right;
+}
+
+#logo_cp2{
+    float:left;
 }

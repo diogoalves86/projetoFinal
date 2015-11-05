@@ -38,20 +38,20 @@
     </asp:ScriptManager>
     <header>
         <div class="content-wrapper">
-            <div class="float-left">
+            <div id="logo_cp2">
                 <p class="site-title">
                     <a runat="server" href="~/">
                         <asp:Image ImageUrl="~/Images/Pedro-II-logo-W.png" runat="server" />
                     </a>
                 </p>
             </div>
-            <div class="float-right">
-                <section id="login">
+            <div id="login">
+                <section>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul>
-                                <li><a id="registerLink" class="link_header" runat="server" href="~/Account/Register">Cadastro</a></li>
-                                <li><a id="loginLink" class="link_header" runat="server" href="~/Account/Login">Login</a></li>
+                                <li class="link_header"><a id="registerLink"  runat="server" href="~/Account/Register">Cadastro</a></li>
+                                <li class="link_header"><a id="loginLink" runat="server" href="~/Account/Login">Login | </a></li>
                             </ul>
                         </AnonymousTemplate>
                         <LoggedInTemplate>
