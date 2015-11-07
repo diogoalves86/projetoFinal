@@ -18,12 +18,12 @@ namespace OnlineDiary
         {
 
         }
-        protected void CreateRoleButton_Click(object sender, EventArgs e) 
-        { 
-            string newRoleName = RoleName.Text.Trim(); 
-            if (!Roles.RoleExists(newRoleName)) 
-                Roles.CreateRole(newRoleName); 
-            RoleName.Text = string.Empty; 
-        }
+        //protected void CreateRoleButton_Click(object sender, EventArgs e) 
+        //{ 
+        //    string newRoleName = RoleName.Text.Trim(); 
+        //    if (!Roles.RoleExists(newRoleName)) 
+        //        Roles.CreateRole(newRoleName); 
+        //    RoleName.Text = string.Empty; 
+        //}
     }
 }
