@@ -23,10 +23,10 @@
                     </p>
 
                     <fieldset>
-                        <legend>Registration Form</legend>
+                        <legend>Formulário de Cadastro</legend>
                         <ol>
                             <li>
-                                <asp:Label runat="server" AssociatedControlID="UserName">User name</asp:Label>
+                                <asp:Label runat="server" AssociatedControlID="UserName">Usuário</asp:Label>
                                 <asp:TextBox runat="server" ID="UserName" />
                                 <asp:RequiredFieldValidator runat="server" ControlToValidate="UserName"
                                     CssClass="field-validation-error" ErrorMessage="The user name field is required." />

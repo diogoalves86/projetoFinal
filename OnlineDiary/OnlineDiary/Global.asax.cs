@@ -6,6 +6,7 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.Security;
 using OnlineDiary;
+using OnlineDiary.Classes;
 
 namespace OnlineDiary
 {
@@ -17,6 +18,8 @@ namespace OnlineDiary
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterOpenAuth();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            Regras roleActions = new Regras();
+            roleActions.AddUserAndRole();
         }
 
         void Application_End(object sender, EventArgs e)
