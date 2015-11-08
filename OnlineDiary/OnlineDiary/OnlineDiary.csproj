@@ -187,6 +187,8 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Painel\Notas\Adicionar.aspx" />
+    <Content Include="Painel\Disciplina\Gerenciar.aspx" />
     <Content Include="Painel\Home.aspx" />
     <Content Include="Images\accent.png" />
     <Content Include="Images\bullet.png" />
@@ -206,6 +208,8 @@
     <Content Include="Global.asax" />
     <Content Include="Images\Pedro-II-logo-W.png" />
     <Content Include="packages.config" />
+    <Content Include="Painel\Disciplina\Adicionar.aspx" />
+    <Content Include="Painel\Notas\Gerenciar.aspx" />
     <Content Include="Painel\Web.config" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Regras\CreateUserWizardWithRoles.aspx" />
@@ -299,8 +303,10 @@
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Classes\Database\Database.cs" />
+    <Compile Include="Classes\Disciplina.cs" />
     <Compile Include="Classes\Turma.cs" />
     <Compile Include="Classes\Usuario.cs" />
+    <Compile Include="Classes\Valida_Dados.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -318,12 +324,40 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Painel\Notas\Adicionar.aspx.cs">
+      <DependentUpon>Adicionar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Painel\Notas\Adicionar.aspx.designer.cs">
+      <DependentUpon>Adicionar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Painel\Disciplina\Gerenciar.aspx.cs">
+      <DependentUpon>Gerenciar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Painel\Disciplina\Gerenciar.aspx.designer.cs">
+      <DependentUpon>Gerenciar.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Painel\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Painel\Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Painel\Disciplina\Adicionar.aspx.cs">
+      <DependentUpon>Adicionar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Painel\Disciplina\Adicionar.aspx.designer.cs">
+      <DependentUpon>Adicionar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Painel\Notas\Gerenciar.aspx.cs">
+      <DependentUpon>Gerenciar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Painel\Notas\Gerenciar.aspx.designer.cs">
+      <DependentUpon>Gerenciar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Regras\CreateUserWizardWithRoles.aspx.cs">
@@ -379,6 +413,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Database\" />
+    <Folder Include="Painel\Anotacoes\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Account\Web.config" />

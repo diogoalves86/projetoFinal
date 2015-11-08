@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace OnlineDiary.Painel.Notas
+namespace OnlineDiary.Painel.Disciplina
 {
 
 

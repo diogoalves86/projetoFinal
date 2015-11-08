@@ -18,7 +18,7 @@ namespace OnlineDiary.Classes
         public void PegarAlunosTurma()
         {
             Hashtable alunos = new Hashtable();
-            SqlDataReader reader = banco.QueryReader("SELECT * FROM Usuario_Turma");
+            SqlDataReader reader = banco.Ler("SELECT * FROM Usuario_Turma");
             while(reader.Read())
             {
                 alunos["aa"] = "a";

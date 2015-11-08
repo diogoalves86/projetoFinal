@@ -10,7 +10,7 @@ namespace OnlineDiary.Classes
 {
     public class Database
     {
-        private string strConexao = ConfigurationManager.ConnectionStrings["MainConnection"].ConnectionString;
+        private string strConexao = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
         private SqlConnection conexao;
         private SqlCommand comando;
 
@@ -19,22 +19,31 @@ namespace OnlineDiary.Classes
             conexao = new SqlConnection(strConexao);
         }
 
-        public SqlConnection ReturnConnection()
+        public SqlConnection Retorna_Conexao()
         {
             return conexao;
         }
 
-        public SqlDataReader QueryReader(string strComando)
+        public SqlDataReader Ler(string strComando)
         {
             comando = new SqlCommand();
             comando.CommandText = strComando;
             return comando.ExecuteReader();
         }
 
-        public int QueryRow(string strComando)
+        public int Executar(string strComando)
         {
-            comando = new SqlCommand();
-            return comando.ExecuteNonQuery();
+            try{	   
+                comando = new SqlCommand(strComando, this.conexao);
+                this.conexao.Open();
+                return comando.ExecuteNonQuery();
+	        }
+	        catch (Exception){
+                return -1;
+	        }
+            finally{
+                this.conexao.Close();
+            }
         }
 
     }

@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace OnlineDiary.Painel.Notas
+namespace OnlineDiary.Painel.Disciplina
 {
     public partial class Adicionar : System.Web.UI.Page
     {
