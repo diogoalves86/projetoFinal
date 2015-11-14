@@ -6,6 +6,8 @@ using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Microsoft.AspNet.Membership.OpenAuth;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace OnlineDiary.Account
 {
@@ -14,6 +16,12 @@ namespace OnlineDiary.Account
         protected void Page_Load(object sender, EventArgs e)
         {
             RegisterUser.ContinueDestinationPageUrl = Request.QueryString["ReturnUrl"];
+            var userStore = new UserStore<IdentityUser>();
+            var manager = new UserManager<IdentityUser>(userStore);
+            var user = new IdentityUser() { UserName = UserName.Text };
+
+            manager.Create();
+
         }
 
         protected void RegisterUser_CreatedUser(object sender, EventArgs e)

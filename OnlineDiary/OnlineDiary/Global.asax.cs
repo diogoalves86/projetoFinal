@@ -18,8 +18,8 @@ namespace OnlineDiary
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterOpenAuth();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            Regras roleActions = new Regras();
-            roleActions.AddUserAndRole();
+            //Regras roleActions = new Regras();
+            //roleActions.AddUserAndRole();
         }
 
         void Application_End(object sender, EventArgs e)
