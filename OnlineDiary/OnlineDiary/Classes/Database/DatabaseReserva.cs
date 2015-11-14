@@ -8,13 +8,13 @@ using System.Configuration;
 
 namespace OnlineDiary.Classes
 {
-    public class Database
+    public class DatabaseReserva
     {
         private string strConexao = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
         private SqlConnection conexao;
         private SqlCommand comando;
 
-        public Database()
+        public DatabaseReserva()
         {
             conexao = new SqlConnection(strConexao);
         }

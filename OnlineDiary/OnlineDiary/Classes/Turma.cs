@@ -12,7 +12,7 @@ namespace OnlineDiary.Classes
 {
     public class Turma
     {
-        private Database banco = new Database();
+        private DatabaseReserva banco = new DatabaseReserva();
 
 
         public void PegarAlunosTurma()

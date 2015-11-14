@@ -10,6 +10,9 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
+
 namespace OnlineDiary
 {
     public partial class ManageRoles : System.Web.UI.Page
@@ -18,12 +21,14 @@ namespace OnlineDiary
         {
 
         }
-        //protected void CreateRoleButton_Click(object sender, EventArgs e) 
-        //{ 
-        //    string newRoleName = RoleName.Text.Trim(); 
-        //    if (!Roles.RoleExists(newRoleName)) 
-        //        Roles.CreateRole(newRoleName); 
-        //    RoleName.Text = string.Empty; 
-        //}
+        protected void CreateRoleButton_Click(object sender, EventArgs e)
+        {
+            //string newRoleName = RoleName.Text.Trim();
+            //if (!Roles.RoleExists(newRoleName))
+            //    Roles.CreateRole(newRoleName);
+            //RoleName.Text = string.Empty;
+            //ManageRoles Role = new ManageRoles();
+            //RoleStore<Role store
+        }
     }
 }

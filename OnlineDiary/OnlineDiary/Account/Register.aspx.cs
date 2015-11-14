@@ -16,11 +16,13 @@ namespace OnlineDiary.Account
         protected void Page_Load(object sender, EventArgs e)
         {
             RegisterUser.ContinueDestinationPageUrl = Request.QueryString["ReturnUrl"];
-            var userStore = new UserStore<IdentityUser>();
+            /*
+             * var userStore = new UserStore<IdentityUser>();
             var manager = new UserManager<IdentityUser>(userStore);
             var user = new IdentityUser() { UserName = UserName.Text };
 
             manager.Create();
+             */
 
         }
 

@@ -3,13 +3,17 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using System.Web.Security;
+
 
 namespace OnlineDiary.Classes
 {
-    public class Usuario
+    public class Memberships
     {
-        [ScaffoldColumn(false)]
-        public int UsuarioID { get; set; }
+        [Key, ScaffoldColumn(false)]
+        public int Id { get; set; }
 
         [Required, StringLength(100), Display(Name = "Name")]
         public string Nome { get; set; }

@@ -311,10 +311,12 @@
       <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Classes\Database\Database.cs" />
+    <Compile Include="Classes\Database\DatabaseReserva.cs" />
     <Compile Include="Classes\Disciplina.cs" />
     <Compile Include="Classes\Turma.cs" />
-    <Compile Include="Classes\Usuario.cs" />
+    <Compile Include="Classes\Usuario\Memberships.cs" />
+    <Compile Include="Classes\Database\DatabaseContext.cs" />
+    <Compile Include="Classes\Usuario\UsuarioContext.cs" />
     <Compile Include="Classes\Valida_Dados.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -333,6 +335,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511142127265_MembershipsTable.cs" />
+    <Compile Include="Migrations\201511142127265_MembershipsTable.Designer.cs">
+      <DependentUpon>201511142127265_MembershipsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Painel\Notas\Adicionar.aspx.cs">
       <DependentUpon>Adicionar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -427,6 +434,11 @@
   <ItemGroup>
     <Content Include="Account\Web.config" />
     <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201511142127265_MembershipsTable.resx">
+      <DependentUpon>201511142127265_MembershipsTable.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

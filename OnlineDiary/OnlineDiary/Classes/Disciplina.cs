@@ -8,7 +8,7 @@ namespace OnlineDiary.Classes
 {
     public class Disciplina
     {
-        private Database banco;
+        private DatabaseReserva banco;
         public int? Id { get; set; }
 
         [Required, StringLength(20, ErrorMessage="O campo Nome pode ter no máximo 20 caracteres")]
@@ -20,7 +20,7 @@ namespace OnlineDiary.Classes
         {
             this.Id = Id;
             this.Nome = Nome;    
-            this.banco = new Database();    
+            this.banco = new DatabaseReserva();    
         }
 
         public string Cadastrar_Disciplina(string nome)
