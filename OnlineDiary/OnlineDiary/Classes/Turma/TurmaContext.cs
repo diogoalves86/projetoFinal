@@ -39,7 +39,7 @@ namespace OnlineDiary.Classes
             }
         }
 
-        public IQueryable<Turma> CarregarDados()
+        public IQueryable<Turma> Lista_Turmas()
         {
             try
             {
