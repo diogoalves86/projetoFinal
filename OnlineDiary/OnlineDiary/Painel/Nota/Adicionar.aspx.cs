@@ -13,5 +13,10 @@ namespace OnlineDiary.Painel.Disciplina
         {
 
         }
+
+        public void Cadastra_Nota(string pri_cert, string seg_cert, string ter_cert)
+        {
+
+        }
     }
 }

@@ -219,7 +219,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
-    <Content Include="Painel\Notas\Adicionar.aspx" />
+    <Content Include="Painel\Nota\Adicionar.aspx" />
     <Content Include="Painel\Disciplina\Gerenciar.aspx" />
     <Content Include="Painel\Home.aspx" />
     <Content Include="Images\accent.png" />
@@ -241,7 +241,7 @@
     <Content Include="Images\Pedro-II-logo-W.png" />
     <Content Include="packages.config" />
     <Content Include="Painel\Disciplina\Adicionar.aspx" />
-    <Content Include="Painel\Notas\Gerenciar.aspx" />
+    <Content Include="Painel\Nota\Gerenciar.aspx" />
     <Content Include="Painel\Web.config" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Regras\CreateUserWizardWithRoles.aspx" />
@@ -363,16 +363,16 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201511150158544_DisciplinaModel.cs" />
-    <Compile Include="Migrations\201511150158544_DisciplinaModel.Designer.cs">
-      <DependentUpon>201511150158544_DisciplinaModel.cs</DependentUpon>
+    <Compile Include="Migrations\201511151724549_Notas_Usuario_Disciplina.cs" />
+    <Compile Include="Migrations\201511151724549_Notas_Usuario_Disciplina.Designer.cs">
+      <DependentUpon>201511151724549_Notas_Usuario_Disciplina.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Painel\Notas\Adicionar.aspx.cs">
+    <Compile Include="Painel\Nota\Adicionar.aspx.cs">
       <DependentUpon>Adicionar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Painel\Notas\Adicionar.aspx.designer.cs">
+    <Compile Include="Painel\Nota\Adicionar.aspx.designer.cs">
       <DependentUpon>Adicionar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Painel\Disciplina\Gerenciar.aspx.cs">
@@ -396,11 +396,11 @@
     <Compile Include="Painel\Disciplina\Adicionar.aspx.designer.cs">
       <DependentUpon>Adicionar.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Painel\Notas\Gerenciar.aspx.cs">
+    <Compile Include="Painel\Nota\Gerenciar.aspx.cs">
       <DependentUpon>Gerenciar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Painel\Notas\Gerenciar.aspx.designer.cs">
+    <Compile Include="Painel\Nota\Gerenciar.aspx.designer.cs">
       <DependentUpon>Gerenciar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -467,8 +467,8 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201511150158544_DisciplinaModel.resx">
-      <DependentUpon>201511150158544_DisciplinaModel.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201511151724549_Notas_Usuario_Disciplina.resx">
+      <DependentUpon>201511151724549_Notas_Usuario_Disciplina.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

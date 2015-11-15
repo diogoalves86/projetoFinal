@@ -28,5 +28,8 @@ namespace OnlineDiary.Classes
 
         [Display(Name = "Nota da 2ªchamada da 3ª Certificação")]
         public int? terceira_recuperacao { get; set; }
+
+        public virtual Disciplina disciplina { get; set; }
+        public virtual Usuario usuario { get; set; }
     }
 }
