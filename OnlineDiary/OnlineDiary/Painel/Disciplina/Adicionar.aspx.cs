@@ -19,24 +19,23 @@ namespace OnlineDiary.Classes
 
         protected void btn_cadastrar_Click(object sender, EventArgs e)
         {
-            Disciplina disciplina = new Disciplina { Nome = txt_nome.Text };
-            disciplina_context.InsertOrUpdate(disciplina);
+            Cadastra_Disciplina();
+        }
 
-            //string nome_disciplina = txt_nome.Text;
-            ////this.disciplina = new Disciplina(0, nome_disciplina);
-            ////string feedback_cadastro = disciplina.Cadastrar_Disciplina(nome_disciplina);
-            //if (feedback_cadastro == "OK")
-            //{
-            //    lbl_feedback.ForeColor = Color.Green;
-            //    lbl_feedback.Visible = true;
-            //    lbl_feedback.Text = "Disciplina cadastrada com sucesso!";
-            //}
-            //else
-            //{
-            //    lbl_feedback.ForeColor = Color.Red;
-            //    lbl_feedback.Visible = true;
-            //    lbl_feedback.Text = feedback_cadastro;
-            //}
+        private void Cadastra_Disciplina()
+        {
+            try
+            {
+                Disciplina disciplina = new Disciplina { Nome = txt_nome.Text };
+                disciplina_context.InsertOrUpdate(disciplina);
+                lbl_feedback.ForeColor = Color.Green;
+                lbl_feedback.Text = "Disciplina cadastrada com sucesso!";
+            }
+            catch (Exception ex)
+            {
+                lbl_feedback.ForeColor = Color.Red;
+                lbl_feedback.Text = ex.Message;
+            }
         }
     }
 }

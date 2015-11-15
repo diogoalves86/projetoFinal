@@ -12,11 +12,18 @@ namespace OnlineDiary.Classes
 
         public void InsertOrUpdate(Disciplina disciplina)
         {
-            db.Database.Connection.Open();
-            db.Entry(disciplina).State = disciplina.Id == null ? EntityState.Added : EntityState.Modified;
-            db.Disciplina.Add(disciplina);
-            db.SaveChanges();
-            db.Database.Connection.Close();
+            try
+            {
+                db.Database.Connection.Open();
+                db.Entry(disciplina).State = disciplina.Id == null ? EntityState.Added : EntityState.Modified;
+                db.Disciplina.Add(disciplina);
+                db.SaveChanges();
+                db.Database.Connection.Close();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
          
         }
 
@@ -34,11 +41,11 @@ namespace OnlineDiary.Classes
             }
         }
 
-        public IQueryable<Disciplina> CarregarDados()
+        public IQueryable<Disciplina> Lista_Disciplinas()
         {
             try
             {
-                var dados = db.Disciplina;
+                var dados = db.Disciplina.Where(o=>true);
                 return dados;
             }
             catch (Exception)
