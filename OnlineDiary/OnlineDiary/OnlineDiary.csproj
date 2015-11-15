@@ -341,7 +341,8 @@
     <Compile Include="Classes\Disciplina\DisciplinaContext.cs" />
     <Compile Include="Classes\Nota\Nota.cs" />
     <Compile Include="Classes\Nota\NotaContext.cs" />
-    <Compile Include="Classes\Turma.cs" />
+    <Compile Include="Classes\Turma\Turma.cs" />
+    <Compile Include="Classes\Turma\TurmaContext.cs" />
     <Compile Include="Classes\Usuario\Usuario.cs" />
     <Compile Include="Classes\Database\DatabaseContext.cs" />
     <Compile Include="Classes\Usuario\UsuarioContext.cs" />
@@ -366,6 +367,10 @@
     <Compile Include="Migrations\201511151724549_Notas_Usuario_Disciplina.cs" />
     <Compile Include="Migrations\201511151724549_Notas_Usuario_Disciplina.Designer.cs">
       <DependentUpon>201511151724549_Notas_Usuario_Disciplina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511151748596_Usuario_Turma.cs" />
+    <Compile Include="Migrations\201511151748596_Usuario_Turma.Designer.cs">
+      <DependentUpon>201511151748596_Usuario_Turma.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Painel\Nota\Adicionar.aspx.cs">
@@ -469,6 +474,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201511151724549_Notas_Usuario_Disciplina.resx">
       <DependentUpon>201511151724549_Notas_Usuario_Disciplina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511151748596_Usuario_Turma.resx">
+      <DependentUpon>201511151748596_Usuario_Turma.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
