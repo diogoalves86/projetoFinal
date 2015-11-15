@@ -12,7 +12,6 @@ namespace OnlineDiary.Classes
         private DisciplinaContext disciplina_context = new DisciplinaContext();
         protected void Page_Load(object sender, EventArgs e)
         {
-            Lista_Disciplinas();
         }
 
         private List<Disciplina> Lista_Disciplinas()

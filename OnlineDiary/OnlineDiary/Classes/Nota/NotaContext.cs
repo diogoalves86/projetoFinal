@@ -39,7 +39,7 @@ namespace OnlineDiary.Classes
             }
         }
 
-        public IQueryable<Nota> CarregarDados()
+        public IQueryable<Nota> Listar_Notas()
         {
             try
             {
