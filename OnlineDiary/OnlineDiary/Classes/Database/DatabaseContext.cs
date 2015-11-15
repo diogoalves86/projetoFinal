@@ -15,5 +15,6 @@ namespace OnlineDiary.Classes
 
         public DbSet<Usuario> Usuario { get; set; }
         public DbSet<Disciplina> Disciplina { get; set; }
+        public DbSet<Nota> Nota { get; set; }
     }
 }

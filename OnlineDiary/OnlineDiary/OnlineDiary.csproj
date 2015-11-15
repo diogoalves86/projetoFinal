@@ -339,6 +339,8 @@
     <Compile Include="Classes\Database\DatabaseReserva.cs" />
     <Compile Include="Classes\Disciplina\Disciplina.cs" />
     <Compile Include="Classes\Disciplina\DisciplinaContext.cs" />
+    <Compile Include="Classes\Nota\Nota.cs" />
+    <Compile Include="Classes\Nota\NotaContext.cs" />
     <Compile Include="Classes\Turma.cs" />
     <Compile Include="Classes\Usuario\Usuario.cs" />
     <Compile Include="Classes\Database\DatabaseContext.cs" />
