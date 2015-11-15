@@ -7,13 +7,13 @@ namespace OnlineDiary.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.0-30225")]
-    public sealed partial class Notas_Usuario_Disciplina : IMigrationMetadata
+    public sealed partial class Usuario_Disciplina : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Notas_Usuario_Disciplina));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Usuario_Disciplina));
         
         string IMigrationMetadata.Id
         {
-            get { return "201511151724549_Notas_Usuario_Disciplina"; }
+            get { return "201511151755484_Usuario_Disciplina"; }
         }
         
         string IMigrationMetadata.Source

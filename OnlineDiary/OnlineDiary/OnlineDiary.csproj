@@ -364,13 +364,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201511151724549_Notas_Usuario_Disciplina.cs" />
-    <Compile Include="Migrations\201511151724549_Notas_Usuario_Disciplina.Designer.cs">
-      <DependentUpon>201511151724549_Notas_Usuario_Disciplina.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\201511151748596_Usuario_Turma.cs" />
     <Compile Include="Migrations\201511151748596_Usuario_Turma.Designer.cs">
       <DependentUpon>201511151748596_Usuario_Turma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511151755484_Usuario_Disciplina.cs" />
+    <Compile Include="Migrations\201511151755484_Usuario_Disciplina.Designer.cs">
+      <DependentUpon>201511151755484_Usuario_Disciplina.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Painel\Nota\Adicionar.aspx.cs">
@@ -472,11 +472,11 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201511151724549_Notas_Usuario_Disciplina.resx">
-      <DependentUpon>201511151724549_Notas_Usuario_Disciplina.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511151748596_Usuario_Turma.resx">
       <DependentUpon>201511151748596_Usuario_Turma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511151755484_Usuario_Disciplina.resx">
+      <DependentUpon>201511151755484_Usuario_Disciplina.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

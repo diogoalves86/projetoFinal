@@ -14,5 +14,7 @@ namespace OnlineDiary.Classes
         [Display(Name="Nome da Disciplina")]
         [MinLength(4, ErrorMessage="O campo Nome precisa ter pelo menos 4 caracteres.")]
         public string Nome { get; set; }
+
+        public virtual ICollection<Usuario> Usuarios { get; set; }
     }
 }

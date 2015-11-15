@@ -28,5 +28,7 @@ namespace OnlineDiary.Classes
         public string Senha { get; set; }
 
         public virtual Turma Turma { get; set; }
+
+        public virtual ICollection<Disciplina> Disciplinas { get; set; }
     }
 }
