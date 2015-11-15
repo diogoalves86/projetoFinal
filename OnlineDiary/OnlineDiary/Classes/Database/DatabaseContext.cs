@@ -14,7 +14,7 @@ namespace OnlineDiary.Classes
 
         }
 
-        public DbSet<Memberships> Usuarios { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
 
     }
 }

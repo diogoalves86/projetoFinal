@@ -10,7 +10,7 @@ namespace OnlineDiary.Classes
     {
         public DatabaseContext db = new DatabaseContext();
 
-        public void InsertOrUpdate(Memberships usuario)
+        public void InsertOrUpdate(Usuario usuario)
         {
             try
             {
@@ -39,7 +39,7 @@ namespace OnlineDiary.Classes
             }
         }
 
-        public IQueryable<Memberships> CarregarDados()
+        public IQueryable<Usuario> CarregarDados()
         {
             try
             {
