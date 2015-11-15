@@ -4,15 +4,14 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using OnlineDiary.Classes;
 
 namespace OnlineDiary.Classes
 {
     public partial class Gerenciar : System.Web.UI.Page
     {
         private NotaContext nota_context = new NotaContext();
-        protected void Page_Load(object sender, EventArgs e)
-        {
-        }
+        
 
         private List<Nota> Listar_Notas()
         {
