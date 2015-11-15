@@ -5,7 +5,8 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
     <fieldset>
-        <h3>Formulário de cadastro de disciplinas</h3>
+        <h3>Formulário de cadastro de disciplinas
+        </h3>
             <p>Nome
                 <asp:TextBox ID="txt_nome" runat="server"></asp:TextBox>
             </p>

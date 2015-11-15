@@ -28,8 +28,8 @@ namespace OnlineDiary.Classes
         {
             try
             {
-                var usuario = db.Usuarios.Find(id);
-                db.Usuarios.Remove(usuario);
+                var usuario = db.Usuario.Find(id);
+                db.Usuario.Remove(usuario);
                 db.SaveChanges();
             }
             catch (Exception)
@@ -43,7 +43,7 @@ namespace OnlineDiary.Classes
         {
             try
             {
-                var dados = db.Usuarios;
+                var dados = db.Usuario;
                 return dados;
             }
             catch (Exception)

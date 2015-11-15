@@ -11,10 +11,9 @@ namespace OnlineDiary.Classes
         public DatabaseContext()
             :base("Default")
         {
-
         }
 
-        public DbSet<Usuario> Usuarios { get; set; }
-
+        public DbSet<Usuario> Usuario { get; set; }
+        public DbSet<Disciplina> Disciplina { get; set; }
     }
 }
