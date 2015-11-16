@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Web.Security;
 using System.Web.UI.WebControls;
 using OnlineDiary.Classes;
 
@@ -15,7 +16,9 @@ namespace OnlineDiary.Classes.Painel.NotaTela
         protected void Page_Load(object sender, EventArgs e)
         {
             Listar_Notas();
-            nota_context.Pega_Nota_Aluno("489e7340-4015-4e0e-ad04-7632ed72f5ab");
+            Roles.CreateRole("Administrador");
+            Roles.CreateRole("Professor");
+            Roles.CreateRole("Aluno");
         }
 
         private void Listar_Notas()

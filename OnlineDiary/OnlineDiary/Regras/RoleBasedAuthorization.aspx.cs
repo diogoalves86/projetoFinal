@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace OnlineDiary.Roles
+namespace OnlineDiary.Regras
 {
     public partial class RoleBasedAuthorization : System.Web.UI.Page
     {

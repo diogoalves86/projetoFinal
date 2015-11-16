@@ -13,7 +13,7 @@ using System.Xml.Linq;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
-namespace OnlineDiary
+namespace OnlineDiary.Regras
 {
     public partial class ManageRoles : System.Web.UI.Page
     {

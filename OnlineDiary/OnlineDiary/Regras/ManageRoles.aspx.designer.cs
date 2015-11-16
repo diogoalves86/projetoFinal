@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace OnlineDiary.Roles {
+namespace OnlineDiary.Regras {
     
     
     public partial class ManageRoles {
