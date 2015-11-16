@@ -4,8 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using OnlineDiary.Classes;
 
-namespace OnlineDiary.Classes
+namespace OnlineDiary.Classes.Painel.TurmaTela
 {
     public partial class Gerenciar : System.Web.UI.Page
     {

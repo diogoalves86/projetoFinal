@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace OnlineDiary.Classes {
+namespace OnlineDiary.Classes.Painel.DisciplinaTela {
     
     
     public partial class Adicionar {

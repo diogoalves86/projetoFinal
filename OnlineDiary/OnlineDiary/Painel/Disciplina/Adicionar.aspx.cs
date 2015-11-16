@@ -5,8 +5,9 @@ using System.Web;
 using System.Drawing;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using OnlineDiary.Classes;
 
-namespace OnlineDiary.Classes
+namespace OnlineDiary.Classes.Painel.DisciplinaTela
 {
     public partial class Adicionar : System.Web.UI.Page
     {
