@@ -15,6 +15,7 @@ namespace OnlineDiary.Classes.Painel.NotaTela
         protected void Page_Load(object sender, EventArgs e)
         {
             Listar_Notas();
+            nota_context.Pega_Nota_Aluno("489e7340-4015-4e0e-ad04-7632ed72f5ab");
         }
 
         private void Listar_Notas()
@@ -25,9 +26,10 @@ namespace OnlineDiary.Classes.Painel.NotaTela
 
         private void Preenche_Notas(List<Nota> notas)
         {
-            TableRow tRow = new TableRow();
             foreach (var nota in notas)
             {
+                TableRow tRow = new TableRow();
+                tbl_notas.Rows.Add(tRow);
                 TableCell tCell = new TableCell();
                 tCell.Text = nota.primeira_certificação.ToString();
                 tRow.Cells.Add(tCell);
@@ -52,8 +54,19 @@ namespace OnlineDiary.Classes.Painel.NotaTela
                 tCell6.Text = nota.terceira_certificação.ToString();
                 tRow.Cells.Add(tCell6);
 
-                tbl_notas.Rows.Add(tRow);
+                TableCell tCell7 = new TableCell();
+                tCell7.Controls.Add(btn_apaga_nota);
+                tRow.Cells.Add(tCell7);
+
+                Button btn = new Button();
+                btn.Text = "Apagar";
+                tCell7.Controls.Add(btn);
             }
+        }
+
+        protected void btn_apaga_nota_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

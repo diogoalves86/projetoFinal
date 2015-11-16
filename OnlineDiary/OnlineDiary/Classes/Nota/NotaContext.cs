@@ -39,6 +39,19 @@ namespace OnlineDiary.Classes
             }
         }
 
+        public void Pega_Nota_Aluno(string id_aluno)
+        {
+            try
+            {
+                var dados = db.Database.SqlQuery(typeof(Nota), "select notas.* from notas, users where notas.usuario_id=users.UserId");
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
         public IQueryable<Nota> Listar_Notas()
         {
             try

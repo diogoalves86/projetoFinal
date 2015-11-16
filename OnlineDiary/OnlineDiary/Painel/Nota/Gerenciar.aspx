@@ -4,6 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="FeaturedContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:Button runat="server" ID="btn_apaga_nota" OnClick="btn_apaga_nota_Click"  Visible="false"/>
     <asp:Table runat="server" ID="tbl_notas">
         <asp:TableHeaderRow>
             <asp:TableHeaderCell runat="server">Alunxs</asp:TableHeaderCell>

@@ -13,6 +13,15 @@ namespace OnlineDiary.Classes.Painel.NotaTela {
     public partial class Gerenciar {
         
         /// <summary>
+        /// btn_apaga_nota control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_apaga_nota;
+        
+        /// <summary>
         /// tbl_notas control.
         /// </summary>
         /// <remarks>
